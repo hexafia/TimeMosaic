@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GoalGetter - About</title>
+    
+  <!-- Bootstrap 5 CSS for layout and styles -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Custom CSS for homepage styles -->
+  <link rel="stylesheet" href="about.css">
+</head>
+<body>
+  
+  <!-- Welcome section with gradient background -->
+  <div class="welcome-section">
+    <div class="intro-section">
+        <div class="blur-box">
+            <h1>Welcome to GotSchedule</h1>
+            <p>Set your goals, track your progress, and achieve success!</p>
+            <p>Set your goals, track your progress, and achieve success! At GotSchedule, we believe that every goal is attainable with the right tools and strategies.
+                 Our intuitive tasking schedule website empowers you to break down your aspirations into actionable steps, helping you stay organized and focused 
+                 along the way.With features designed to boost your productivity and improve your time management, you can monitor your journey and celebrate your 
+                 achievements. Join us on the path to success and make your goals a reality!</p>
+        </div>
+    </div>
+    
+   <!-- Box section -->
+   <div class="box-section">
+    <!-- First row of boxes -->
+    <div class="row">
+        <div class="clickable-box" data-title="Enhanced Organization" data-short-description="Keep all your tasks in one place." data-description="Utilizing a tasking schedule website allows you to centralize all your tasks, deadlines, and projects in one convenient location. This enhanced organization helps you avoid missed deadlines and forgotten responsibilities, ensuring that you stay on top of your commitments. With features like categorization and prioritization, managing your workload becomes a seamless experience." onclick="expandBox(this)">
+            <img src="Enhanced Organization.gif" alt="Enhanced Organization">
+            <div class="box-content">
+                <h2 class="title">Enhanced Organization</h2>
+                <p class="description">Keep all your tasks in one place.</p>
+            </div>
+        </div>
+
+        <div class="clickable-box" data-title="Increased Productivity" data-short-description="Boost your efficiency and focus." data-description="A tasking schedule website is designed to help you maximize your productivity. By breaking down larger projects into manageable tasks and setting deadlines, you can maintain focus and avoid overwhelm. With reminders and notifications, you'll always be aware of upcoming deadlines, enabling you to allocate your time effectively and complete tasks more efficiently." onclick="expandBox(this)">
+            <img src="Increased Productivity.gif" alt="Increased Productivity">
+            <div class="box-content">
+                <h2 class="title">Increased Productivity</h2>
+                <p class="description">Boost your efficiency and focus.</p>
+            </div>
+        </div>
+
+        <div class="clickable-box" data-title="Improved Time Management" data-short-description="Master your schedule with ease." data-description="Effective time management is crucial for success in both personal and professional life. A tasking schedule website provides tools to plan your day, week, or month, allowing you to allocate time slots for each task based on priority. This proactive approach not only reduces stress but also gives you a clearer overview of your commitments, helping you to balance work, leisure, and self-care more effectively." onclick="expandBox(this)">
+            <img src="Improved Time Management.gif" alt="Improved Time Management">
+            <div class="box-content">
+                <h2 class="title">Improved Time Management</h2>
+                <p class="description">Master your schedule with ease.</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Second row of boxes -->
+    <div class="row">
+        <div class="clickable-box" data-title="Collaboration" data-short-description="Work together seamlessly." data-description="For those working in teams or seeking accountability partners, a tasking schedule website facilitates collaboration. You can share tasks, deadlines, and progress updates with others, fostering a supportive environment. This collaborative feature not only enhances communication but also motivates team members to stay engaged and work together toward shared goals, driving collective success." onclick="expandBox(this)">
+            <img src="Collaboration Opportunities.jfif" alt="Collaboration">
+            <div class="box-content">
+                <h2 class="title">Collaboration</h2>
+                <p class="description">Work together seamlessly.</p>
+            </div>
+        </div>
+
+        <div class="clickable-box" data-title="Goal Tracking" data-short-description="Monitor your progress." data-description="Visualizing your goals is a powerful motivator. A tasking schedule website allows you to set clear, defined goals and track your progress visually. By displaying your tasks and milestones in an organized manner, you can see how far you've come and what still needs to be done. This visualization fosters a sense of accomplishment, encouraging you to stay committed to your objectives." onclick="expandBox(this)">
+            <img src="Goal Visualization.gif" alt="Goal Tracking">
+            <div class="box-content">
+                <h2 class="title">Goal Tracking</h2>
+                <p class="description">Monitor your progress.</p>
+            </div>
+        </div>
+
+        <div class="clickable-box" data-title="Customization" data-short-description="Tailor the experience to your needs." data-description="One of the key advantages of a tasking schedule website is its flexibility and customization options. Whether you prefer a daily, weekly, or monthly view of your tasks, you can adjust the layout to suit your workflow. Additionally, you can create personalized task categories, set recurring reminders, and prioritize your work in a way that aligns with your unique preferences. This adaptability ensures that you can manage your tasks efficiently, no matter your style or schedule." onclick="expandBox(this)">
+            <img src="Flexibility and Customization.gif" alt="Customization">
+            <div class="box-content">
+                <h2 class="title">Customization</h2>
+                <p class="description">Tailor the experience to your needs.</p>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- Button to return to the main page -->
+  <a href="main.php" class="btn return-btn">Go Back to Main Page</a>
+</div>
+
+<!-- Bootstrap 5 JS for interactivity -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Our custom JavaScript -->
+<script src="about.js"></script>
+</body>
+</html>

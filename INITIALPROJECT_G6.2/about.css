@@ -1,0 +1,191 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+
+/* Welcome section styles */
+.welcome-section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100vh;
+    background: linear-gradient(120deg, #007bff, #00c6ff);
+    color: black;
+    text-align: left;
+    padding: 20px;
+}
+
+.intro-section {
+    width: 40%;
+    padding: 40px;
+    animation: slideInLeft 1s ease forwards;
+    margin-top: 50px;
+}
+
+.blur-box {
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.box-section {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin-top: 20px;
+    animation: slideInRight 1s ease forwards;
+    animation-delay: 0.5s;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.clickable-box {
+    position: relative;
+    width: 30%;
+    height: 250px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 0 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.clickable-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(5px);
+    transition: filter 0.3s ease;
+}
+
+.clickable-box:hover {
+    transform: scale(1.05); /* Slightly enlarge the box */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Add a stronger shadow on hover */
+}
+
+
+
+.box-content {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    text-align: center;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.title {
+    font-size: 20px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 14px;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+/* Expanded box */
+.expanded {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60vw; /* Make the box larger */
+    height: 60vh; /* Set a fixed height */
+    background-color: rgba(255, 255, 255, 0.8); /* White with transparency */
+    z-index: 1000;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s ease;
+    background-image: url('your-gif-url-here'); /* Add your GIF URL here */
+    background-size: cover; /* Cover the entire box */
+    background-position: center; /* Center the GIF */
+}
+
+
+
+.expanded img {
+    display: none;
+}
+
+.full-description {
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.return-btn {
+    position: fixed; /* Fix the position */
+    bottom: 20px; /* Distance from the bottom */
+    left: 20px; /* Distance from the left */
+    border-radius: 30px; /* Makes the button oval */
+    background-color: rgb(0, 0, 0); /* Initial background color */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Padding for better size */
+    text-align: center; /* Center the text */
+    transition: background-color 0.3s ease; /* Smooth transition for color change */
+    border: none; /* Remove default border */
+    font-size: 16px; /* Font size */
+    text-decoration: none; /* Remove underline for <a> tag */
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+.return-btn:hover {
+    background-color: rgb(71, 71, 71); /* Background color on hover */
+}
+
+/* Animation for the intro section */
+.intro-section {
+    opacity: 0; /* Start hidden */
+    transform: translateX(-50px); /* Start slightly to the left */
+    transition: opacity 1s ease, transform 1s ease; /* Transition for the effect */
+}
+
+/* Animation for the box section */
+.box-section {
+    opacity: 0; /* Start hidden */
+    transform: translateX(50px); /* Start slightly to the right */
+    transition: opacity 1s ease, transform 1s ease; /* Transition for the effect */
+}
+
+/* Active class for animating in */
+.animate-intro {
+    opacity: 1; /* Fade in */
+    transform: translateX(0); /* Move to original position */
+}
+
+.animate-boxes {
+    opacity: 1; /* Fade in */
+    transform: translateX(0); /* Move to original position */
+}
